@@ -27,6 +27,7 @@
 		<!-- liens vers les fichiers et librairies JavaScript -->
 		<script src="js/jquery-3.7.1.min.js"></script>
 		<script src="js/script.js"></script>
+		<script src="splide-4.1.3/splide-4.1.3/dist/js/splide.min.js"></script>
 		
 	</head>
 
@@ -45,24 +46,45 @@
 		<main>
 			
 			<section class="page_propos">
-				<div class="images_propos">
-					<img src="images/inspirations/visuel_1.webp">
-					<img src="images/inspirations/visuel_3.webp">
-					<img src="images/inspirations/visuel_6.webp">
-					<img src="images/inspirations/visuel_7.webp">
-					<img src="images/inspirations/visuel_8.webp">
-				</div>	
+				<section class="images_propos">
+					<section id="image-carousel" class="splide" aria-label="Beautiful Images">
+						<div class="splide__track">
+							<ul class="splide__list">
+								<li class="splide__slide">
+									<img src="images/inspirations/visuel_1.webp" alt="">
+								</li>
+								<li class="splide__slide">
+									<img src="images/inspirations/visuel_3.webp" alt="">
+								</li>
+								<li class="splide__slide">
+									<img src="images/inspirations/visuel_6.webp" alt="">
+								</li>
+								<li class="splide__slide">
+									<img src="images/inspirations/visuel_7.webp" alt="">
+								</li>
+								<li class="splide__slide">
+									<img src="images/inspirations/visuel_8.webp" alt="">
+								</li>
+							</ul>
+						</div>
+					</section>
+				</section>
+
+			<script>
+				
+  				new Splide( '#image-carousel' ).mount();
+			</script>	
 
 				<div class="text_propos">
 					<div class="p_propos">
 						<h1>À propos</h1>
-						<p>Philippa Shepherd, artiste peintre, crée des œuvres où la nature et l'émotion se rencontrent.</p> 
+						<p>Philippa Shepherd crée des paysages minimalistes et des œuvres abstraites à l'huile et à l'acrylique. Les paysages s'inspirent de lieux réels qu'elle a visités, des espaces dont elle cherche à capturer l'essence plutôt qu'une réalité stricte. Le travail repose sur l'accumulation de couches successives et une approche minutieuse de la texture, permettant à la peinture physique de prendre tout son sens. Sa technique laisse place à la spontanéité dans les tableaux, donnant naissance à des formes qui peuvent émerger d'une couche.</p> 
 
-						<p>Son inspiration puise chez de nombreux maîtres — Georgia O'Keeffe, Gerhard Richter, Nicolas de Staël — mais aussi dans les paysages dramatiques qu'elle parcourt.</p> 
+						<p>La palette de couleurs reflète une dualité entre sérénité et intensité, utilisant principalement des bleus naturels, des verts et des tons terre pour ancrer les toiles dans le monde vivant, tout en injectant des rouges profonds et émotionnels pour introduire le drame et le contraste.</p> 
 
-						<p>Les couchers de soleil spectaculaires du plateau de Valensole, le dynamisme de l'eau dans les gorges du Verdon à Castellane, l'immensité changeante de la mer, et la lumière singulière du soleil sur la Côte d'Azur: chaque lieu imprime sa marque dans sa peinture.</p>
+						<p>Par un coup de pinceau vigoureux et affirmé qui vise à insuffler du drame dans des compositions autrement minimalistes, un travail délicat et minutieux au pinceau doux invite au contraire à la tranquillité.</p>
 
-						<p>D'origine anglaise, elle vit aujourd'hui en France avec sa famille.</p>
+						<p>Ce processus artistique est une forme de dialogue avec la toile. Plutôt que de suivre un plan rigide, les peintures se construisent organiquement, guidées par ce qui se révèle sous les yeux à chaque nouvelle étape. C'est dans cet équilibre précis entre la puissance du geste, la douceur de l'atmosphère et l'intuition créative que les tableaux prennent vie, invitant le spectateur à la contemplation.</p>
 					</div>
 
 					<div class="p_propos">
@@ -92,7 +114,7 @@
 				</li>
 			</ul>
 
-			<a class="link_alice" href="https://purple-star-create.github.io/portfolio/" target="_blank">Codé avec &#9829; par Alice Desruelle</a>
+			<a class="link_alice" href="https://www.alicedesruelle.com/" target="_blank">Codé avec &#9829; par Alice Desruelle</a>
 		</footer>
 		
 	</body>

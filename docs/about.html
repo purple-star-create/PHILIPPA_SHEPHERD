@@ -27,6 +27,7 @@
 		<!-- liens vers les fichiers et librairies JavaScript -->
 		<script src="js/jquery-3.7.1.min.js"></script>
 		<script src="js/script.js"></script>
+		<script src="splide-4.1.3/splide-4.1.3/dist/js/splide.min.js"></script>
 	</head>
 
 	<body>
@@ -42,25 +43,47 @@
 		</header>
 
 		<main>
-			<section class="page_propos">
-				<div class="images_propos">
-					<img src="images/inspirations/visuel_1.webp">
-					<img src="images/inspirations/visuel_3.webp">
-					<img src="images/inspirations/visuel_6.webp">
-					<img src="images/inspirations/visuel_7.webp">
-					<img src="images/inspirations/visuel_8.webp">
-				</div>	
+			
 
+			<section class="page_propos">
+				<section class="images_propos">
+					<section id="image-carousel" class="splide" aria-label="Beautiful Images">
+					  	<div class="splide__track">
+							<ul class="splide__list">
+								<li class="splide__slide">
+									<img src="images/inspirations/visuel_1.webp" alt="">
+								</li>
+								<li class="splide__slide">
+									<img src="images/inspirations/visuel_3.webp" alt="">
+								</li>
+								<li class="splide__slide">
+									<img src="images/inspirations/visuel_6.webp" alt="">
+								</li>
+								<li class="splide__slide">
+									<img src="images/inspirations/visuel_7.webp" alt="">
+								</li>
+								<li class="splide__slide">
+									<img src="images/inspirations/visuel_8.webp" alt="">
+								</li>
+							</ul>
+					  </div>
+					</section>
+				</section>
+
+			<script>
+				
+  				new Splide( '#image-carousel' ).mount();
+			</script>
 				<div class="text_propos">
 					<div class="p_propos">
 						<h1>About</h1>
-						<p>Philippa Shepherd creates paintings that bring together nature and emotion.</p> 
+						<p>Philippa Shepherd creates minimalist landscapes and abstract pieces using oil and acrylics. The landscapes are inspired by real places she has visited, spaces from which she seeks to capture the essence rather than a strict reality. The work relies on the accumulation of successive layers and a meticulous approach to texture, allowing the physical paint to take on full meaning. Her technique allows spontaneity in the paintings leading to shapes that can be pulled out of a layer.</p> 
 
-						<p>Her inspiration draws from many painters — Georgia O'Keeffe, Gerhard Richter, Nicolas de Staël — but also from the dramatic landscapes she travels through.</p> 
+						<p>The colour palette reflects a duality between serenity and intensity primarily using natural blue, greens and earth tones to anchor the canvases in the living world, while injecting deep, emotional reds to introduce drama and contrast.</p> 
 
-						<p>The spectacular sunsets of the Valensole plateau, the dynamism of the water in the Verdon Gorges at Castellane, the ever-changing vastness of the sea, and the sun on the French Riviera: each place leaves its mark on her painting.</p>
+						<p>Through vigorous and assertive brushwork which aims to breathe drama into otherwise minimalist compositions, delicate and intricate soft brushwork in contrast aims to invite tranquility.</p>
 
-						<p>Originally from England, she now lives in France with her family.</p>
+						<p>This artistic process is a form of dialogue with the canvas. Rather than following a rigid plan, the paintings are organically built by being guided by what reveals itself before the eyes at each new stage. It is in this precise balance between the power of the gesture, the softness of the atmosphere, and creative intuition that the paintings come to life, inviting the viewer into contemplation.</p>
 					</div>
 
 					<div class="p_propos">
@@ -90,7 +113,7 @@
 				</li>
 			</ul>
 
-			<a class="link_alice" href="https://purple-star-create.github.io/portfolio/" target="_blank">Coded
+			<a class="link_alice" href="https://www.alicedesruelle.com/" target="_blank">Coded
 			 with &#9829; by Alice Desruelle</a>
 		</footer>
 		
