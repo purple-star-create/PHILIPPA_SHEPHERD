@@ -132,7 +132,9 @@ h1, h2, h3, h4, h5{
 /* ----------------------------- */
 
 body{
-  margin: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 40px;
 	font-family: 'Gelasio-Regular', Arial, sans-serif;
 	font-size: 1.6rem; /* 1.6rem = 16px dans notre cas */
 	line-height: 1.2;
@@ -144,11 +146,15 @@ body{
 
 header{
   display: flex;
-  margin: 10px;
-  margin-top: 50px;
+  padding: 10px;
+  padding-top: 50px;
   border-bottom: 1px solid #d8d8d8;
+  background-color: white;
   align-items: center;
   justify-content: space-between;
+  position: sticky;
+  top: 0px;
+  z-index: 2;
 }
 
 header h1{
@@ -289,11 +295,13 @@ footer{
 @media screen and (max-width: 730px){
 
   body{
-    margin: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
   }
 
   header{
-    margin-top: 10px;
+    padding-top: 20px;
   }
 
   header h1{
